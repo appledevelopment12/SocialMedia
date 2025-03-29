@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- URL Schemes for Google and Facebook Sign-In -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <!-- Google Sign-In URL scheme -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <!-- Your Google reversed client ID -->
+                <string>com.googleusercontent.apps.1013956051663-go5ovoaucp4amg1bkl6ipnjrnnu4cb9j</string>
+            </array>
+        </dict>
+        <!-- Facebook Sign-In URL scheme -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <!-- Your Facebook App ID -->
+                <string>fb845758307706402</string>
+            </array>
+        </dict>
+    </array>
+
+    <!-- Facebook Login Details -->
+    <key>FacebookAppID</key>
+    <string>845758307706402</string>
+    <key>FacebookDisplayName</key>
+    <string>newproject</string>
+
+    <!-- LSApplicationQueriesSchemes required for Facebook SDK -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+
+    <!-- Permission Descriptions (for Facebook or any other SDKs that require it) -->
+    <key>NSCameraUsageDescription</key>
+    <string>We need access to the camera for Facebook login</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We need access to the photo library for Facebook login</string>
+
+    <!-- Default iOS Settings -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                    <key>UISceneStoryboardFile</key>
+                    <string>Main</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</dict>
+</plist>
